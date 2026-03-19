@@ -15,36 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/aditya-college-of-engineering-andhra-pradesh-other-37548",
-  "https://www.shiksha.com/college/darshan-university-rajkot-60127",
-  "https://www.shiksha.com/college/dhemaji-engineering-college-assam-other-146411",
-  "https://www.shiksha.com/college/ppg-institute-of-technology-ppgit-coimbatore-42638",
-  "https://www.shiksha.com/college/dilkap-research-institute-of-engineering-and-management-studies-raigad-59773",
-  "https://www.shiksha.com/college/vidya-academy-of-science-and-technology-thrissur-4522",
-  "https://www.shiksha.com/college/krishna-group-of-institutions-kanpur-37439",
-  "https://www.shiksha.com/college/government-sri-krishnarajendra-silver-jubilee-technological-institute-bangalore-60680",
-  "https://www.shiksha.com/university/singhania-university-jhunjhunu-23718",
-  "https://www.shiksha.com/university/xim-university-bhubaneswar-47718",
-  "https://www.shiksha.com/college/kings-engineering-college-sriperumbudur-chennai-53974",
-  "https://www.shiksha.com/college/ct-group-of-institutions-south-campus-jalandhar-24066",
-  "https://www.shiksha.com/college/godavari-college-of-engineering-jalgaon-20057",
-  "https://www.shiksha.com/university/g-h-raisoni-university-saikheda-madhya-pradesh-other-53440",
-  "https://www.shiksha.com/college/b-s-a-college-of-engineering-and-technology-mathura-24480",
-  "https://www.shiksha.com/college/devi-mahalaxmi-polytechnic-college-thane-97879",
-  "https://www.shiksha.com/university/capital-university-jharkhand-other-63315",
-  "https://www.shiksha.com/college/shri-ram-college-of-engineering-and-management-haryana-other-31851",
-  "https://www.shiksha.com/college/techno-college-of-engineering-agartala-66835",
-  "https://www.shiksha.com/college/government-college-of-engineering-tirunelveli-61733",
-  "https://www.shiksha.com/college/kmbb-college-of-engineering-and-technology-bhubaneswar-48075",
-  "https://www.shiksha.com/college/riet-jaipur-rajasthan-institute-of-engineering-and-technology-23206",
-  "https://www.shiksha.com/college/srk-institute-of-technology-vijayawada-42596",
-  "https://www.shiksha.com/college/vignan-s-lara-institute-of-technology-science-andhra-pradesh-other-60949",
-  "https://www.shiksha.com/college/vikas-college-of-engineering-and-technology-vijayawada-43234",
-  "https://www.shiksha.com/college/mgm-school-of-engineering-and-technology-aurangabad-202469",
-  "https://www.shiksha.com/college/ideal-institute-of-engineering-kalyani-54057",
-  "https://www.shiksha.com/college/nagesh-karajagi-orchid-college-of-engineering-solapur-59609",
-  "https://www.shiksha.com/college/g-c-r-g-group-of-institutions-lucknow-33189",
-  "https://www.shiksha.com/college/bansal-college-of-engineering-bansal-group-of-institutes-madhya-pradesh-other-60183",
+  "https://www.shiksha.com/university/chinmaya-vishwa-vidyapeeth-kochi-57785",
+  "https://www.shiksha.com/college/camellia-institute-of-technology-kolkata-48316",
+  "https://www.shiksha.com/university/aliah-university-city-campus-park-circus-kolkata-54423",
+  "https://www.shiksha.com/college/college-of-horticulture-and-forestry-neri-dr-yashwant-singh-parmar-university-of-horticulture-and-forestry-hamirpur-106249",
+  "https://www.shiksha.com/college/haryana-engineering-college-yamuna-nagar-33281",
+  "https://www.shiksha.com/college/central-institute-of-plastics-engineering-and-technology-ahmedabad-vatva-g-i-d-c-38291",
+  "https://www.shiksha.com/college/government-engineering-college-mananthavady-wayanad-60712",
+  "https://www.shiksha.com/college/achariya-college-of-engineering-technology-pondicherry-148067",
+  "https://www.shiksha.com/college/seshadripuram-institute-of-technology-mysore-227865",
+  "https://www.shiksha.com/college/college-of-engineering-karunagappally-kollam-60459",
+  "https://www.shiksha.com/college/narasu-s-sarathy-institute-of-technology-salem-61505",
+  "https://www.shiksha.com/college/dr-ntr-college-of-agricultural-engineering-acharya-n-g-ranga-agricultural-university-guntur-106321",
+  "https://www.shiksha.com/college/rvs-group-of-institution-dindigul-campus-151891",
+  "https://www.shiksha.com/college/university-college-of-engineering-ramanathapuram-tamil-nadu-other-61777",
+  "https://www.shiksha.com/college/sagar-institute-of-technology-and-management-sitm-barabanki-uttar-pradesh-other-42611",
+  "https://www.shiksha.com/college/jvit-jnana-vikas-institute-of-technology-bidadi-bangalore-23202",
+  "https://www.shiksha.com/college/technocrats-institute-of-technology-excellence-bhopal-58679",
+  "https://www.shiksha.com/college/st-thomas-institute-for-science-and-technology-trivandrum-60650",
+  "https://www.shiksha.com/university/sant-baba-bhag-singh-university-jalandhar-64897",
+  "https://www.shiksha.com/college/dumkal-institute-of-engineering-and-technology-murshidabad-49092",
 ]
 
 
@@ -9253,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 801
+    c_count = 1241
 
     try:
         for base_url in BASE_URL:
