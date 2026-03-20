@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/university/chinmaya-vishwa-vidyapeeth-kochi-57785",
-  "https://www.shiksha.com/college/camellia-institute-of-technology-kolkata-48316",
-  "https://www.shiksha.com/university/aliah-university-city-campus-park-circus-kolkata-54423",
-  "https://www.shiksha.com/college/college-of-horticulture-and-forestry-neri-dr-yashwant-singh-parmar-university-of-horticulture-and-forestry-hamirpur-106249",
-  "https://www.shiksha.com/college/haryana-engineering-college-yamuna-nagar-33281",
-  "https://www.shiksha.com/college/central-institute-of-plastics-engineering-and-technology-ahmedabad-vatva-g-i-d-c-38291",
-  "https://www.shiksha.com/college/government-engineering-college-mananthavady-wayanad-60712",
-  "https://www.shiksha.com/college/achariya-college-of-engineering-technology-pondicherry-148067",
-  "https://www.shiksha.com/college/seshadripuram-institute-of-technology-mysore-227865",
-  "https://www.shiksha.com/college/college-of-engineering-karunagappally-kollam-60459",
-  "https://www.shiksha.com/college/narasu-s-sarathy-institute-of-technology-salem-61505",
-  "https://www.shiksha.com/college/dr-ntr-college-of-agricultural-engineering-acharya-n-g-ranga-agricultural-university-guntur-106321",
-  "https://www.shiksha.com/college/rvs-group-of-institution-dindigul-campus-151891",
-  "https://www.shiksha.com/college/university-college-of-engineering-ramanathapuram-tamil-nadu-other-61777",
-  "https://www.shiksha.com/college/sagar-institute-of-technology-and-management-sitm-barabanki-uttar-pradesh-other-42611",
-  "https://www.shiksha.com/college/jvit-jnana-vikas-institute-of-technology-bidadi-bangalore-23202",
-  "https://www.shiksha.com/college/technocrats-institute-of-technology-excellence-bhopal-58679",
-  "https://www.shiksha.com/college/st-thomas-institute-for-science-and-technology-trivandrum-60650",
-  "https://www.shiksha.com/university/sant-baba-bhag-singh-university-jalandhar-64897",
-  "https://www.shiksha.com/college/dumkal-institute-of-engineering-and-technology-murshidabad-49092",
+  "https://www.shiksha.com/college/kmct-institute-of-technology-and-management-kuttipuram-kerala-other-213473",
+  "https://www.shiksha.com/college/engineering-college-nowgong-madhya-pradesh-other-47556",
+  "https://www.shiksha.com/college/shetty-institute-of-technology-karnataka-other-59643",
+  "https://www.shiksha.com/college/karmayogi-engineering-college-solapur-59721",
+  "https://www.shiksha.com/college/pydah-college-of-engineering-and-technology-visakhapatnam-42533",
+  "https://www.shiksha.com/college/fit-group-of-institutions-meerut-52709",
+  "https://www.shiksha.com/college/st-thomas-college-of-engineering-and-technology-kannur-63895",
+  "https://www.shiksha.com/college/krishna-vidyapeeth-of-management-and-technology-bhiwani-66771",
+  "https://www.shiksha.com/college/saikrupa-college-of-agriculture-and-food-technology-ahmednagar-66913",
+  "https://www.shiksha.com/college/veerayatan-institute-of-engineering-mandvi-kutch-district-202331",
+  "https://www.shiksha.com/college/anjuman-institute-of-technology-and-management-aitm-bhatkal-karnataka-other-43352",
+  "https://www.shiksha.com/college/kalaivani-college-of-technology-study-world-group-coimbatore-51417",
+  "https://www.shiksha.com/college/prime-group-of-institutions-navsari-60145",
+  "https://www.shiksha.com/college/world-institute-of-technology-gurgaon-36108",
+  "https://www.shiksha.com/college/shradchandrajee-pawar-college-of-food-technology-ratnagiri-66929",
+  "https://www.shiksha.com/college/college-of-dairy-science-amreli-kamdhenu-university-202357",
+  "https://www.shiksha.com/college/priyadarshini-institute-of-technology-and-management-pitm-guntur-42616",
+  "https://www.shiksha.com/college/avr-svr-college-of-engineering-and-technology-avrsvrcet-kurnool-47326",
+  "https://www.shiksha.com/college/vishveshwarya-technical-campus-faculty-of-degree-engineering-sangli-61117",
+  "https://www.shiksha.com/college/priyadarshini-institute-of-science-and-technology-for-women-khammam-61401",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 1261
+    c_count = 1641
 
     try:
         for base_url in BASE_URL:
