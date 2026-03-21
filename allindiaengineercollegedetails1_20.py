@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/srikalahasteeswara-institute-of-technology-chittoor-23002",
-  "https://www.shiksha.com/college/shrinathji-institute-for-technical-education-meerut-148745",
-  "https://www.shiksha.com/college/bldea-s-college-of-engineering-and-technology-bijapur-185067",
-  "https://www.shiksha.com/college/anurag-group-of-institutions-hyderabad-194159",
-  "https://www.shiksha.com/college/kashmir-college-of-engineering-technology-baramulla-242726",
-  "https://www.shiksha.com/college/cds-college-of-engineering-sambahjinagar-maharashtra-other-243876",
-  "https://www.shiksha.com/college/t-j-institute-of-technology-old-mahabalipuram-road-chennai-19429",
-  "https://www.shiksha.com/college/intell-engineering-college-anantapur-20320",
-  "https://www.shiksha.com/college/mayurakshi-institute-of-engineering-and-technology-jodhpur-42322",
-  "https://www.shiksha.com/college/gandhiji-institute-of-science-and-technology-gist-andhra-pradesh-other-43182",
-  "https://www.shiksha.com/college/timespro-bennett-university-greater-noida-53197",
-  "https://www.shiksha.com/college/sri-venkateswara-engineering-college-nalgonda-61349",
-  "https://www.shiksha.com/college/rajas-international-institute-of-technology-for-women-nagercoil-61735",
-  "https://www.shiksha.com/university/sri-siddhartha-academy-of-higher-education-tumkur-64603",
-  "https://www.shiksha.com/college/technology-education-and-research-integrated-institution-kurukshetra-66837",
-  "https://www.shiksha.com/college/chettinad-academy-of-research-and-education-kolar-245488",
-  "https://www.shiksha.com/college/universal-college-of-engineering-and-technology-tirunelveli-61691",
-  "https://www.shiksha.com/college/bhuma-shobha-nagireddy-memorial-college-of-engineering-and-technology-allagadda-65173",
-  "https://www.shiksha.com/college/mgm-s-college-of-agriculture-bio-technology-aurangabad-153883",
-  "https://www.shiksha.com/college/jai-bharat-college-of-management-and-engineering-technology-powered-by-sunstone-kochi-213083",
+  "https://www.shiksha.com/college/government-polytechnic-college-rupnagar-punjab-other-236848",
+  "https://www.shiksha.com/college/dooars-institute-of-pharmaceutical-sciences-and-research-west-bengal-other-237618",
+  "https://www.shiksha.com/college/uttaran-institute-of-medical-sciences-west-bengal-other-237634",
+  "https://www.shiksha.com/college/chinmaya-advance-research-education-college-of-nursing-haridwar-89689",
+  "https://www.shiksha.com/college/vivekvardhini-sevabhavi-college-of-diploma-in-pharmacy-parbhani-97373",
+  "https://www.shiksha.com/college/sangamner-medical-foundation-and-research-institute-ahmednagar-100309",
+  "https://www.shiksha.com/college/government-college-for-women-ludhiana-102929",
+  "https://www.shiksha.com/college/s-n-college-gurdaspur-105687",
+  "https://www.shiksha.com/college/mata-sundri-girls-college-bathinda-110949",
+  "https://www.shiksha.com/college/s-n-college-nawanshahar-140635",
+  "https://www.shiksha.com/college/yogendra-nath-saxena-college-of-pharmacy-and-research-centre-uttar-pradesh-other-148985",
+  "https://www.shiksha.com/college/srs-college-of-pharmacy-agra-149033",
+  "https://www.shiksha.com/college/dharmaraj-shaikshanik-pratishthan-s-college-of-pharmacy-ahmednagar-150707",
+  "https://www.shiksha.com/college/acs-college-of-pharmacy-mathura-181089",
+  "https://www.shiksha.com/college/apex-college-of-pharmacy-uttar-pradesh-other-181101",
+  "https://www.shiksha.com/college/dr-a-p-j-abdul-kalam-college-of-pharmacy-uttar-pradesh-other-181171",
+  "https://www.shiksha.com/college/jbs-institute-of-pharmacy-malinpur-barabanki-181689",
+  "https://www.shiksha.com/college/central-research-institute-of-unani-medicine-hyderabad-194071",
+  "https://www.shiksha.com/college/luckky-college-of-pharmaceutical-sciences-khurda-208133",
+  "https://www.shiksha.com/college/ram-dass-educational-society-guru-ram-dass-institute-of-pharmacy-punjab-other-208161",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 2061
+    c_count = 3781
 
     try:
         for base_url in BASE_URL:
