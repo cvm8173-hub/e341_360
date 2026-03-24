@@ -15,26 +15,26 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
- "https://www.shiksha.com/college/mbns-institutes-jamshedpur-228935",
-  "https://www.shiksha.com/college/indra-institute-of-medical-and-science-dewas-230068",
-  "https://www.shiksha.com/college/krishna-institute-of-pharmaceutical-science-and-research-shivpuri-230114",
-  "https://www.shiksha.com/college/sims-college-of-pharmacy-meerut-237596",
-  "https://www.shiksha.com/college/srm-modinagar-college-of-pharmacy-uttar-pradesh-other-237598",
-  "https://www.shiksha.com/college/vedanaygam-hospital-coimbatore-240602",
-  "https://www.shiksha.com/college/yashoda-superspeciality-hospital-and-cancer-institute-ghaziabad-240614",
-  "https://www.shiksha.com/college/aditya-birla-memorial-hospital-pune-240638",
-  "https://www.shiksha.com/college/gastrocare-multi-speciality-hospital-bhopal-240692",
-  "https://www.shiksha.com/college/fortis-escorts-hospital-faridabad-240778",
-  "https://www.shiksha.com/college/manipal-hospital-mysore-240822",
-  "https://www.shiksha.com/college/sri-venkateswara-institute-of-cancer-care-and-advanced-research-tirupati-240894",
-  "https://www.shiksha.com/college/forists-hospital-karnataka-other-241880",
-  "https://www.shiksha.com/college/sushrut-hospital-and-research-centre-mumbai-241890",
-  "https://www.shiksha.com/college/yashoda-health-care-hitech-city-hyderabad-241904",
-  "https://www.shiksha.com/college/p-d-hinduja-hospital-mumbai-241918",
-  "https://www.shiksha.com/college/neo-hospital-noida-243690",
-  "https://www.shiksha.com/college/care-hospital-visakhapatnam-243702",
-  "https://www.shiksha.com/college/shri-sadashivrao-patil-shikshan-sanstha-s-institute-of-diploma-in-pharmacy-nagpur-88811",
-  "https://www.shiksha.com/college/shreeji-institute-of-nursing-mandsaur-91115",
+  "https://www.shiksha.com/college/balwantrao-chavan-college-of-pharmacy-nanded-150661",
+  "https://www.shiksha.com/college/samarth-college-of-pharmacy-deulgaon-raja-amravati-150731",
+  "https://www.shiksha.com/college/university-college-of-ayurved-jodhpur-202181",
+  "https://www.shiksha.com/college/s-c-s-college-of-pharmacy-davangere-67705",
+  "https://www.shiksha.com/college/kamla-nehru-college-for-women-phagwara-72595",
+  "https://www.shiksha.com/college/anandi-pharmacy-college-kolhapur-88567",
+  "https://www.shiksha.com/college/abhinav-institute-of-pharmacy-thane-147761",
+  "https://www.shiksha.com/college/set-paramedical-and-nursing-institute-anantnag-151857",
+  "https://www.shiksha.com/college/asian-institute-of-pharmacy-nashik-89109",
+  "https://www.shiksha.com/college/vidya-sagar-post-graduate-institute-dhule-101261",
+  "https://www.shiksha.com/college/government-college-jind-112385",
+  "https://www.shiksha.com/college/government-medical-college-doda-152145",
+  "https://www.shiksha.com/college/late-laxmibai-phadtare-college-of-pharmacy-kalamb-maharashtra-other-179669",
+  "https://www.shiksha.com/college/khalsa-ayurvedic-medical-college-mansa-196037",
+  "https://www.shiksha.com/college/v-three-college-of-paramedical-rudrapur-202053",
+  "https://www.shiksha.com/college/sri-lakshmi-venkateswara-institute-of-pharmaceutical-sciences-andhra-pradesh-other-61029",
+  "https://www.shiksha.com/college/rnrm-college-of-pharmacy-gurgaon-88485",
+  "https://www.shiksha.com/college/womens-college-of-pharmacy-vadgaon-kolhapur-100845",
+  "https://www.shiksha.com/college/sahyadri-institute-of-vocational-training-pune-138663",
+  "https://www.shiksha.com/college/apollo-med-skills-limited-chennai-141661",
 ]
 
 
@@ -9243,7 +9243,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 4141
+    c_count = 2381
 
     try:
         for base_url in BASE_URL:
