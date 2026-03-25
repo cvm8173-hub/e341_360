@@ -15,26 +15,25 @@ from selenium.common.exceptions import TimeoutException
 
 # ---------------- URLS ----------------
 BASE_URL = [
-  "https://www.shiksha.com/college/balwantrao-chavan-college-of-pharmacy-nanded-150661",
-  "https://www.shiksha.com/college/samarth-college-of-pharmacy-deulgaon-raja-amravati-150731",
-  "https://www.shiksha.com/college/university-college-of-ayurved-jodhpur-202181",
-  "https://www.shiksha.com/college/s-c-s-college-of-pharmacy-davangere-67705",
-  "https://www.shiksha.com/college/kamla-nehru-college-for-women-phagwara-72595",
-  "https://www.shiksha.com/college/anandi-pharmacy-college-kolhapur-88567",
-  "https://www.shiksha.com/college/abhinav-institute-of-pharmacy-thane-147761",
-  "https://www.shiksha.com/college/set-paramedical-and-nursing-institute-anantnag-151857",
-  "https://www.shiksha.com/college/asian-institute-of-pharmacy-nashik-89109",
-  "https://www.shiksha.com/college/vidya-sagar-post-graduate-institute-dhule-101261",
-  "https://www.shiksha.com/college/government-college-jind-112385",
-  "https://www.shiksha.com/college/government-medical-college-doda-152145",
-  "https://www.shiksha.com/college/late-laxmibai-phadtare-college-of-pharmacy-kalamb-maharashtra-other-179669",
-  "https://www.shiksha.com/college/khalsa-ayurvedic-medical-college-mansa-196037",
-  "https://www.shiksha.com/college/v-three-college-of-paramedical-rudrapur-202053",
-  "https://www.shiksha.com/college/sri-lakshmi-venkateswara-institute-of-pharmaceutical-sciences-andhra-pradesh-other-61029",
-  "https://www.shiksha.com/college/rnrm-college-of-pharmacy-gurgaon-88485",
-  "https://www.shiksha.com/college/womens-college-of-pharmacy-vadgaon-kolhapur-100845",
-  "https://www.shiksha.com/college/sahyadri-institute-of-vocational-training-pune-138663",
-  "https://www.shiksha.com/college/apollo-med-skills-limited-chennai-141661",
+  "https://www.shiksha.com/college/genesis-institute-of-pharmacy-radhanagari-kolhapur-179679",
+  "https://www.shiksha.com/college/college-of-physiotherapy-bagalkot-186545",
+  "https://www.shiksha.com/college/vivekanand-college-of-pharmacy-sikar-192783",
+  "https://www.shiksha.com/college/sivaraj-siddha-medical-college-salem-193671",
+  "https://www.shiksha.com/college/k-s-homoeopathic-medical-college-gwalior-230180",
+  "https://www.shiksha.com/college/emversity-school-of-hospitality-pune-pcmc-237028",
+  "https://www.shiksha.com/college/nett-college-of-physiotherapy-thane-245100",
+  "https://www.shiksha.com/college/r-k-pharmacy-college-azamgarh-59607",
+  "https://www.shiksha.com/college/m-m-u-college-of-pharmacy-ramanagara-67793",
+  "https://www.shiksha.com/college/sjm-dental-college-and-hospital-chitradurga-67875",
+  "https://www.shiksha.com/college/t-s-homoeopathy-college-amravati-86999",
+  "https://www.shiksha.com/college/civil-hospital-panchkula-105927",
+  "https://www.shiksha.com/college/gayatri-college-of-physiotherapy-sambalpur-146109",
+  "https://www.shiksha.com/college/danteswari-college-of-pharmacy-chhattisgarh-other-146531",
+  "https://www.shiksha.com/college/s-sukhjinder-singh-polytechnic-and-pharmacy-college-gurdaspur-148117",
+  "https://www.shiksha.com/college/k-l-e-university-college-of-pharmacy-rajajinagar-bangalore-149455",
+  "https://www.shiksha.com/college/santosh-college-of-pharmacy-bulandshahr-181889",
+  "https://www.shiksha.com/college/shrinath-institute-of-paramedicalk-sciences-rajsamand-201251",
+  "https://www.shiksha.com/college/nandha-medical-college-and-hospital-erode-214875",
 ]
 
 
@@ -9243,7 +9242,7 @@ def parse_faq_scholarships_section(driver, URLS):
 def scrape_mba_colleges():
     driver = create_driver()
     all_data = []
-    c_count = 2381
+    c_count = 2782
 
     try:
         for base_url in BASE_URL:
